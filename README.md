@@ -16,4 +16,9 @@ axios.delete
 
 and added :
 
-axios.all() for sending many req in one time
+- axios.all()
+  for sending many req in one time
+
+- default globals
+
+- interceptor
