@@ -2,6 +2,11 @@ import React, { Component } from "react";
 import axios from "axios";
 class Axiosall extends Component {
   componentDidMount() {
+    axios.post("/users", { name: "Hossein" }).then((response) => {
+      console.log(response);
+    });
+
+    /*
     // for send many req to server we can use from this method
     axios
       .all([
@@ -11,10 +16,12 @@ class Axiosall extends Component {
       ])
       .then(
         // we can spread axios this method work like destructuring
-        axios.spread((todos, posts, users) => {
-          console.log(users.data);
+        axios.spread(( users) => {
+          // console.log(users.data);
         })
       );
+
+      */
   }
 
   render() {
